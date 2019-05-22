@@ -5,7 +5,7 @@
 <ul>
   <li>buat database dengan nama dbloaning</li>
   <li>configurasi config.json</li>
-  <li>go run base.go</li>
+  <li>go run main.go</li>
 </ul> 
 <h2>Cara run Angular 6 Frontend
 <ul>

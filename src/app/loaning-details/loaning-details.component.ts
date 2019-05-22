@@ -25,21 +25,20 @@ export class LoaningDetailsComponent implements OnInit {
 		if (+id > 0) {  
 		  this.loaningService.getLoaning(+id).subscribe(data => {  
 		    this.loaning = data;
-		    this.id = id;
 		    this.submitted = false;
 		  })  
 		}  
 		console.log(this.loaning);
-  	}
-	save() {
-		this.loaningService.updateLoaning(this.id,this.loaning)
+  }
+	save(ID: number) {
+		this.loaningService.updateLoaning(ID,this.loaning)
 		  .subscribe(data => console.log(data), error => console.log(error));
 		this.loaning = new Loaning();
 	}
 
-	onUpdate() {
+	onUpdate(ID: number) {
 		this.submitted = true;
-		this.save();
+		this.save(ID);
 		this.router.navigate(['list']);  
 	}
 }

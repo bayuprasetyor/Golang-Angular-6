@@ -1,0 +1,35 @@
+<h3>Create Loaning</h3>
+<div [hidden]="submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="Date">Date</label>
+            <input type="date" class="form-control" id="Date" required [(ngModel)]="loaning.Date" name="Date">
+        </div>
+        <div class="form-group">
+            <label for="KtpDetailID">KTP</label>
+            <input type="number" class="form-control" id="KtpDetailID" required [(ngModel)]="loaning.KtpDetailID" name="KtpDetailID">
+        </div>        
+        <div class="form-group">
+            <label for="BirthDate">Birth Date</label>
+            <input type="date" class="form-control" id="BirthDate" required [(ngModel)]="loaning.BirthDate" name="BirthDate">
+        </div>
+        <div class="form-group">
+            <label for="Gender">Gender</label>
+            <input type="text" class="form-control" id="Gender" required [(ngModel)]="loaning.Gender" name="Gender">
+        </div>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" id="Name" required [(ngModel)]="loaning.Name" name="Name">
+        </div>
+        <div class="form-group">
+            <label for="Amount">Amount</label>
+            <input type="number" class="form-control" id="Amount" required [(ngModel)]="loaning.Amount" name="Amount">
+        </div>
+
+        <div class="form-group">
+            <label for="Period">Period</label>
+            <input type="number" class="form-control" id="Period" required [(ngModel)]="loaning.Period" name="Period">
+        </div>
+        <button type="submit" class="btn btn-success" >Submit</button>
+    </form>
+</div>

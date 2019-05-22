@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1>Loanings</h1>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>KTP</th>
+                    <th>Date</th>
+                    <th>Birth Date</th>
+                    <th>Gender</th>
+                    <th>Amount</th>
+                    <th>Period</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let loaning of loanings">
+                    <td>{{loaning.Name}}</td>
+                    <td>{{loaning.KtpDetailID}}</td>
+                    <td>{{loaning.Date}}</td>
+                    <td>{{loaning.BirthDate}}</td>
+                    <td>{{loaning.Gender}}</td>
+                    <td>{{loaning.Amount}}</td>
+                    <td>{{loaning.Period}}</td>
+                    <td>
+                    <button (click)="deleteLoaning(loaning.ID)">Delete</button>
+                    <button (click)="editLoaning(loaning.ID)">Update</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 <h3>Create Loaning</h3>
 <div [hidden]="submitted" style="width: 400px;" *ngIf="loaning">
-    <form (ngSubmit)="onUpdate()">
+    <form (ngSubmit)="onUpdate(loaning.ID)">
         <div class="form-group">
             <label for="Date">Date</label>
             <input type="date" class="form-control" id="Date"required [(ngModel)]="loaning.Date" name="Date">

@@ -38,7 +38,7 @@ export class LoaningListComponent implements OnInit {
   }
   editLoaning(ID: number): void {  
     localStorage.removeItem('editId');  
-    localStorage.setItem('editId', ID);  
+    localStorage.setItem('editId',String(ID));    
     this.router.navigate(['edit']);  
   }  
 }

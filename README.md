@@ -8,7 +8,7 @@
   <li>go run main.go</li>
 </ul> 
 
-<h2>Cara run Angular 6 Frontend
+<h2>Cara run Angular 6 Frontend</h2>
 <ul>
   <li>npm install</li>
   <li>npm start</li>

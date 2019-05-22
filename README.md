@@ -9,5 +9,6 @@
 </ul> 
 <h2>Cara run Angular 6 Frontend
 <ul>
+  <li>npm install</li>
   <li>npm start</li>
 </ul>
